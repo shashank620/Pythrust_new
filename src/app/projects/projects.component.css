@@ -1,0 +1,63 @@
+:host {
+    display: block;
+    padding: 0rem 2rem;
+    color: aquamarine;
+}
+
+.project-container {
+    background: #870000;
+    background: -webkit-linear-gradient(to right, #190A05, #870000);
+    background: linear-gradient(to right, #190A05, #870000);
+    padding: 3rem;
+}
+.project-container h1{
+    border: 3px solid green;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+section h3 {
+    margin-top: 0.5rem;
+}
+
+section ul {
+    margin-top: 0.5rem;
+    list-style:disc;
+}
+
+
+:host.pc section {
+    margin-left: 5rem;
+    position: relative;
+}
+
+:host.pc section h3 span:nth-child(2) {
+    color: white;
+}
+
+:host.pc section::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -60px;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+:host.pc section::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 130%;
+    left: -50px;
+    top: 5%;
+    z-index: 1;
+}
+
+:host.pc section:last-child:after {
+    height: 100%;
+}

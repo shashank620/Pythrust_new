@@ -1,0 +1,14 @@
+<div class="hobbies-container">
+  <button class="btn btn-warning" (click)="toggleHobbies()">
+    {{ showHobbies ? 'Hide Hobbies' : 'Show Hobbies' }}
+  </button>
+
+  <div *ngIf="showHobbies">
+    <h3>Hobbies & Interests</h3>
+    <div class="hobbies-grid">
+      <div class="hobby-item" *ngFor="let hobby of hobbies">
+        {{ hobby }}
+      </div>
+    </div>
+  </div>
+</div>

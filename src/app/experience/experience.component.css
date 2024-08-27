@@ -1,0 +1,77 @@
+*{
+  color: #fff
+}
+
+:host {
+  display: block;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.experience-container {
+    text-align: center;
+    max-width: 100%;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    margin-top: 2rem;
+  }
+  
+  .experience-container h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .timeline-item:hover {
+    border-radius: 5px;
+  }
+  
+  .timeline-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffff;
+    padding: 5px;
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+
+  }
+  
+  .timeline-content {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  }
+  
+  .timeline-content.hidden {
+    display: none;
+  }
+  
+  .timeline-content:not(.hidden) {
+    display: block;
+  }
+  
+  .timeline-content h4 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  
+  .timeline-content p {
+    margin: 5px 0;
+  }
+
+  

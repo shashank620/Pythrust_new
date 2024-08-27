@@ -1,0 +1,61 @@
+.contact-container {
+    background: #1D4350;
+    background: -webkit-linear-gradient(to bottom, #A43931, #1D4350);
+    background: linear-gradient(to bottom, #A43931, #1D4350);
+    width: 100%;
+    padding: 5rem;
+}
+
+:host {
+    display: block;
+    padding: 3rem 2rem;
+}
+
+.card-title {
+    text-align: center;
+    border: 3px solid green;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.card-body {
+    color: #ffff;
+    padding: 2rem;
+}
+
+.card {
+    background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
+    border-radius: 30px;
+}
+
+.contact-container {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0%;
+}
+
+.social-media {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+}
+
+
+
+@media (max-width: 767.98px) {
+    .row {
+        flex-direction: column;
+    }
+}

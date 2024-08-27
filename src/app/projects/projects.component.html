@@ -1,0 +1,15 @@
+<div class="project-container" id="projects">
+    <h1>Projects</h1>
+    <section *ngFor="let project of projects">
+        <h3>{{project.title}}</h3>
+
+        <h4>
+            <span>Technologies: </span>
+            <span>{{project.technologies}}</span>
+        </h4>
+
+        <ul *ngFor="let desc of project.description">
+            <li>{{desc}}</li>
+        </ul>
+    </section>
+</div>

@@ -1,0 +1,13 @@
+<div class="education-container" id="education">
+  <h3>Education</h3>
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let edu of education" (click)="selectEducation(edu)">
+      <div class="timeline-date">{{ edu.graduationDate }}</div>
+      <div class="timeline-content" [class.hidden]="selectedEducation !== edu">
+        <h4>{{ edu.degree }}</h4>
+        <p><strong>{{ edu.University }}</strong></p>
+        <p><strong>{{ edu.marks }}</strong></p>
+      </div>
+    </div>
+  </div>
+</div>

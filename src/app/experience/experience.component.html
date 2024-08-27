@@ -1,0 +1,18 @@
+<div class="experience-container container " id="experience">
+  <h3>Experience</h3>
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let job of experience" (click)="selectExperience(job)">
+      <div class="timeline-title">{{ job.title }}</div>
+      <p>Tap anywhere to see the details</p>
+      <div class="timeline-content" [class.hidden]="selectedJob !== job">
+        <p><strong>Company Name:  {{ job.company }}</strong></p>
+        <p>Responsibility:  {{ job.description }}</p>
+        <ul>
+          <li>{{ job.point1 }}</li>
+          <li>{{ job.point2 }}</li>
+          <li>{{ job.point3 }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

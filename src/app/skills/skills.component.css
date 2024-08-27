@@ -1,0 +1,70 @@
+* {
+  color: #ffff;
+}
+
+:host {
+  display: block;
+  padding: 0rem 2rem;
+}
+
+.skills-container {
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+  background: #c31432;
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  background: linear-gradient(to right, #240b36, #c31432);
+  padding: 3rem;
+}
+
+.skills-container h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.skill-item {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  background: #F3904F;
+  background: -webkit-linear-gradient(to right, #3B4371, #F3904F);
+  background: linear-gradient(to right, #3B4371, #F3904F);
+}
+
+.skill-rating {
+  width: 100%;
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.skill-item:hover .skill-rating {
+  display: block;
+
+}
+
+.skill-rating p {
+  margin: 5px 0;
+}
+
+.skill-rating p:first-child {
+  font-weight: bold;
+}

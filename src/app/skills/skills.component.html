@@ -1,0 +1,21 @@
+<div class="skills-container" id="skills">
+  <h3>Skills</h3>
+  <div class="skills-grid">
+    <div class="skill-item" *ngFor="let skill of technicalSkills" (mouseover)="showRating(skill)"
+      (mouseleave)="hideRating()">
+      <span>{{ skill.name }}</span>
+      <div class="skill-rating" *ngIf="activeSkill === skill">
+        <p>Rating: {{ skill.rating }}/5</p>
+      </div>
+    </div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-item" *ngFor="let skill of softSkills" (mouseover)="showRating(skill)"
+      (mouseleave)="hideRating()">
+      <span>{{ skill.name }}</span>
+      <div class="skill-rating" *ngIf="activeSkill === skill">
+        <p>Rating: {{ skill.rating }}/5</p>
+      </div>
+    </div>
+  </div>
+</div>
